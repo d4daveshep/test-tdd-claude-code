@@ -1,0 +1,7 @@
+[project]
+name = "test-tdd-claude-code"
+version = "0.1.0"
+description = "Testing using Claude Code for TDD"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
