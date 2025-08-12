@@ -11,6 +11,10 @@ This test suite covers deck creation and initialization for a standard 52-card d
 import pytest
 from typing import List, Set, Tuple
 
+import sys
+sys.path.append('src')
+from card_deck import Deck, Card
+
 
 class TestDeckCreation:
     """Test deck creation and initialization."""
