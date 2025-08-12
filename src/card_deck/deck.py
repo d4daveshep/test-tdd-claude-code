@@ -21,6 +21,30 @@ class Card(NamedTuple):
 
 
 class Deck:
+    """
+    A standard 52-card deck of playing cards.
+
+    Represents a complete deck of playing cards with all standard suits and ranks.
+    Each deck contains exactly 52 unique cards (13 ranks × 4 suits).
+    Cards are immutable and the deck provides defensive copies to maintain integrity.
+
+    The deck is initialized with all standard playing cards:
+    - Suits: Spades, Hearts, Diamonds, Clubs
+    - Ranks: A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
+
+    Attributes:
+        cards: A defensive copy of the deck's cards as a List[Card]
+
+    Example:
+        >>> deck = Deck()
+        >>> len(deck)
+        52
+        >>> deck.cards[0].rank
+        'A'
+        >>> deck.cards[0].suit
+        'Spades'
+    """
+
     def __init__(self) -> None:
         self._cards: List[Card] = []
         suits = ["Spades", "Hearts", "Diamonds", "Clubs"]
