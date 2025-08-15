@@ -8,13 +8,13 @@ This test suite covers deck creation and initialization for a standard 52-card d
 - Edge cases in deck initialization
 """
 
-import pytest
+import sys
 from typing import List, Set, Tuple
 
-import sys
+import pytest
 
 sys.path.append("src")
-from card_deck import Deck, Card
+from card_deck import Card, Deck
 
 
 class TestDeckCreation:
@@ -491,4 +491,3 @@ class TestDeckCreationConsistency:
         # Both decks should be identical and unaffected by each other
         assert first_deck_length == second_deck_length == 52
         assert len(deck1) == 52  # First deck unchanged
-
